@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 
 class Reg2 extends StatefulWidget {
   const Reg2({super.key});
@@ -74,7 +74,7 @@ class _Reg2State extends State<Reg2> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 15,bottom: 30,left: 56,right: 56),
+                  padding: const EdgeInsets.only(top: 10,bottom: 10,left: 56,right: 56),
                   child: TextFormField(
                     validator: (value) {
                       if(value==null||value.isEmpty){
@@ -141,7 +141,7 @@ class _Reg2State extends State<Reg2> {
                 Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: ElevatedButton(onPressed: (){
-                    Fluttertoast.showToast(msg: "Success");
+                    //Fluttertoast.showToast(msg: "Success");
                     if(formkey.currentState!.validate()){
                       Navigator.push(context,MaterialPageRoute(builder: (context) {
                         return Reg2();
